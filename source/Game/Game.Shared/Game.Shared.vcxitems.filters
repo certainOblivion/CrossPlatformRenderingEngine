@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\ColorTriangleVS.HLSL">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\ColorTrianglePS.HLSL">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\TexturedModelVS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\TexturedModelPS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\PointLightPS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\PointLightVS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\BasicVS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\BasicPS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\BlinnPhongPS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\BlinnPhongVS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\SkyboxVS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\SkyboxPS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\EnvironmentMappingPS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\EnvironmentMappingVS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\FogVS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\FogPS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\TransparencyMappingPS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+    <FxCompile Include="$(MSBuildThisFileDirectory)Content\TransparencyMappingVS.hlsl">
+      <Filter>Content\Shaders</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Content">
+      <UniqueIdentifier>{3bb2cd1b-6886-464b-9c9c-ae7eee2e38a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{edad0dab-29d5-481a-951a-7bc26dcfa0a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Models">
+      <UniqueIdentifier>{9a6a4c57-baa7-4940-bbdb-fc0dfe11914f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Textures">
+      <UniqueIdentifier>{fbdca179-aa47-4ab9-b36f-10a40236d890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Shaders">
+      <UniqueIdentifier>{00845d9c-4c10-4667-b8f1-df4e1f31ffd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Renderers">
+      <UniqueIdentifier>{5e14fbdb-a54a-43e4-b231-4e30ce6fb009}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Misc">
+      <UniqueIdentifier>{e5bd05d7-e78d-49cc-896d-1f67d0b7a9ff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)Common\DirectXHelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)ColoredTriangleRenderer.h">
+      <Filter>Content\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)TexturedSphereRenderer.h">
+      <Filter>Content\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameRenderer.h">
+      <Filter>Content\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)PointLightRenderer.h">
+      <Filter>Content\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)BlinnPhongRenderer.h">
+      <Filter>Content\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)EnvironmentMappingRenderer.h">
+      <Filter>Content\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)FogRenderer.h">
+      <Filter>Content\Renderers</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)TransparencyMappingRenderer.h">
+      <Filter>Content\Renderers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Content\Models\texturedSphere.bin">
+      <Filter>Content\Models</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Content\Models\DirectionalLightProxy.bin">
+      <Filter>Content\Models</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)Content\Models\pointlightproxy.bin">
+      <Filter>Content\Models</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\EarthComposite.dds">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\Earthatday.dds">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\Maskonaive2_1024.dds">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\Checkerboard.png">
+      <Filter>Content\Textures</Filter>
+    </Image>
+    <Image Include="$(MSBuildThisFileDirectory)Content\Textures\AlphaMask_32bpp.png">
+      <Filter>Content\Textures</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)ColoredTriangleRenderer.cpp">
+      <Filter>Content\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)TexturedSphereRenderer.cpp">
+      <Filter>Content\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameRenderer.cpp">
+      <Filter>Content\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)PointLightRenderer.cpp">
+      <Filter>Content\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)BlinnPhongRenderer.cpp">
+      <Filter>Content\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)EnvironmentMappingRenderer.cpp">
+      <Filter>Content\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)FogRenderer.cpp">
+      <Filter>Content\Renderers</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)TransparencyMappingRenderer.cpp">
+      <Filter>Content\Renderers</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
