@@ -72,7 +72,7 @@ namespace Library
 			pathVector->reserve(pathVectorSize);
 			mTextures.insert(std::pair<TextureType, std::vector<std::string>*>(textureType, pathVector));
 
-			for (uint32_t i = 0; i < pathVectorSize; i++)
+			for (uint32_t j = 0; j < pathVectorSize; j++)
 			{
 				inFile.read(readData, sizeof(uint32_t));
 				uint32_t pathLength;

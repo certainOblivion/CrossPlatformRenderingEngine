@@ -122,12 +122,12 @@ namespace Library
 		memcpy(&uvChannelCount, readUnsignedInt, sizeof(uint32_t));
 		for (uint32_t i = 0; i < uvChannelCount; i++)
 		{
-			uint32_t vertexCount = (uint32_t)mVertices.size();
+			uint32_t numVerteces = (uint32_t)mVertices.size();
 			std::vector<XMFLOAT3>* textureCoordinates = new std::vector<XMFLOAT3>();
-			textureCoordinates->reserve(vertexCount);
+			textureCoordinates->reserve(numVerteces);
 			mTextureCoordinates.push_back(textureCoordinates);
 
-			for (uint32_t j = 0; j < vertexCount; j++)
+			for (uint32_t j = 0; j < numVerteces; j++)
 			{
 				char readChar[sizeof(DirectX::XMFLOAT3)];
 				inputFile.read(readChar, sizeof(DirectX::XMFLOAT3));
