@@ -42,3 +42,12 @@ Network Trash Folder
 Temporary Items
 .apdisk
 *.ipch
+*.cso
+*.bin
+*.png
+*.tlog
+*.idb
+*.rc
+*.res
+*.manifest
+build/DirectX.sdf
